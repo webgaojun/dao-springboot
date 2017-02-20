@@ -1,4 +1,6 @@
 FROM hub.c.163.com/xbingo/jdk8
+RUN pwd
+RUN apt-get update
 ENV M2_HOME ./maven
 RUN ./maven/bin/mvn clean
 RUN ./maven/bin/mvn package
