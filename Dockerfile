@@ -3,6 +3,6 @@ RUN apt-get install maven
 ENV M2_HOME /usr/share/maven
 RUN mvn clean
 RUN mvn package
-ADD ./target/springboot-test-0.1.jar  /springboot-test-0.1.jar
+ADD ./target/dao-springboot-0.1.jar  /dao-springboot.jar
 EXPOSE 8080
-CMD ["java","-jar","/springboot-test-0.1.jar"]
+CMD ["java","-jar","/dao-springboot.jar"]
